@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio final</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt ("Ingese su nombre: ");
+        let edad = parseInt (prompt("Ingreese su edad: "));
+        let esEstudiante = prompt ("¿Es usted estudiante?:  (si/no)").trim().toLowerCase();
+
+        let mensaje = `Hola, ${nombre}.\n`;
+
+        if (edad >= 18){
+            mensaje += "Eres mayor de edad.\n";
+        } else {
+            mensaje += "Eres menor de edad.\n";
+        }
+
+        if (esEstudiante === "si"){
+            mensaje += "Tienes derecho a un descuento por ser estudiante.\n";
+        }else{
+            mensaje += "No tienes descuento.\n";
+        }
+
+        console.log(mensaje);
+        alert(mensaje);
+    </script>
+    
+</body>
+</html>
